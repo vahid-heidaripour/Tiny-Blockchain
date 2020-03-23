@@ -63,7 +63,6 @@ bool Blockchain::resolveConflicts()
     // grab and verify the chains from all the nodes in our network
     for (const std::string& node : nodes) {
         int maxLength = getChainSize();
-        std::cout << "max length: " << maxLength << std::endl;
         std::string url = "http://" + node + "/chain";
         http::Request request(url);
         const http::Response response = request.send("GET");
@@ -88,7 +87,6 @@ bool Blockchain::resolveConflicts()
                 auto phash = static_cast<std::string>(bl["previous_hash"]);
                 Block block(index, ts, trx, proof, phash);
                 newChain.emplace_back(block);
-                std::cout << "newchain size: " << newChain.size() << std::endl;
             }
 
             if (length > maxLength && isChainValid(newChain)) {
