@@ -1,5 +1,5 @@
 # Tiny-Blockchain
-This is a small blockchain based on **"Bitcoin and Cryptocurrency Technologies"** from [here](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf). It uses **crow** library to for rest apis. [crow](https://github.com/ipkn/crow). It is a very fast and easy to use C++ micro web framework (inspired by Python Flask). For the JSON manipulation, I used JSON for Modern C++, **nlohmann/json**, [nlohmann/json](https://github.com/nlohmann/json). And for calculating sha256, I used **sha256.h** from [Zedwood](http://zedwood.com/).
+This is a small blockchain based on **"Bitcoin and Cryptocurrency Technologies"** book from [here](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf). It uses **crow** library for rest apis. [crow](https://github.com/ipkn/crow). It is a very fast and easy to use C++ micro web framework (inspired by Python Flask). For the JSON manipulation, I used JSON for Modern C++, **nlohmann/json**, [nlohmann/json](https://github.com/nlohmann/json). And for calculating sha256, I used **sha256.h** from [Zedwood](http://zedwood.com/).
 
 ### How to compile:
 ```
