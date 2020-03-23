@@ -25,14 +25,26 @@ localhost:6000/mine
 ```
 
 New transaction is a **POST** method, make sure to add to its body like this:
-```{"sender": "x", "recipient": "y", "amount":1}```
+
+```
+{
+    "sender": "x",
+    "recipient": "y", 
+    "amount":1
+}
+```
 ### To add a new transaction
 ```
 localhost:6000/transaction/new
 ```
 
 Register nodes is a **POST** method, make sure to add to its body like this:
-```{"nodes":["localhost:6001", "localhost:6002"]}```
+
+```
+{
+    "nodes":["localhost:6001", "localhost:6002"]
+}
+```
 ### To register other nodes in the network
 ```
 localhost:6000/nodes/register
