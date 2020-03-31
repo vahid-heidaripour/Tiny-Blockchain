@@ -57,5 +57,8 @@ localhost:6000/nodes/resolve
 
 Each node, at first, creates the genesis block with no transactions. Then it keeps the current transactions until a mine happens. Then it adds a new block to the chain with transactions.
 
+#### Here is a complete example:
+Run an instance with port 6000, ```./bc 6000```, then add some transactions, then a mine, some other transactions and some other mines, now check the chain with ```localhost:6000/chain```. Now, it's time to add another instance with port 6001, and register other nodes to it. Right now, this one has a smaller chain, so we expect that its chained replaced with the others chain. Run resolve request and see the result.
+
 
 
